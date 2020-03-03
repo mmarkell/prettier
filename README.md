@@ -1,12 +1,5 @@
 # prettier
 
-[![CircleCI](https://circleci.com/gh/tmknom/prettier.svg?style=svg)](https://circleci.com/gh/tmknom/prettier)
-[![Docker Build Status](https://img.shields.io/docker/build/tmknom/prettier.svg)](https://hub.docker.com/r/tmknom/prettier/builds/)
-[![Docker Automated build](https://img.shields.io/docker/automated/tmknom/prettier.svg)](https://hub.docker.com/r/tmknom/prettier/)
-[![MicroBadger Size](https://img.shields.io/microbadger/image-size/tmknom/prettier.svg)](https://microbadger.com/images/tmknom/prettier)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/tmknom/prettier.svg)](https://microbadger.com/images/tmknom/prettier)
-[![License](https://img.shields.io/github/license/tmknom/prettier.svg)](https://opensource.org/licenses/Apache-2.0)
-
 An opinionated code formatter based on Docker.
 
 This is [prettier](https://github.com/prettier/prettier) wrapper.
@@ -20,19 +13,19 @@ This is [prettier](https://github.com/prettier/prettier) wrapper.
 ### Format markdown
 
 ```shell
-docker run --rm -v "$PWD:/work" tmknom/prettier --parser=markdown --write '**/*.md'
+docker run --rm -v "$PWD:/work" unohealth/prettier-please --parser=markdown --write '**/*.md'
 ```
 
 ### Format json
 
 ```shell
-docker run --rm -v "$PWD:/work" tmknom/prettier --parser=json --write '**/*.json'
+docker run --rm -v "$PWD:/work" unohealth/prettier-please --parser=json --write '**/*.json'
 ```
 
 ### Help
 
 ```shell
-docker run --rm tmknom/prettier
+docker run --rm unohealth/prettier-please
 ```
 
 ## Makefile targets
@@ -50,7 +43,7 @@ lint                           Lint
 ### Installation
 
 ```shell
-git clone git@github.com:tmknom/prettier.git
+git clone git@github.com:mmarell/prettier.git
 cd prettier
 make install
 ```
